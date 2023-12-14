@@ -35,9 +35,9 @@ export default function Home() {
     setQuestion(e);
   };
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between p-5 lg:p-24">
       <div className="z-10  w-full items-center justify-between font-mono text-sm lg:flex">
-        <form className="max-w-2xl mx-auto w-full" onSubmit={chatNow}>
+        <form className="lg:max-w-2xl mx-auto w-full" onSubmit={chatNow}>
           <div className="mb-5">
             <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
               Ask me anything...
