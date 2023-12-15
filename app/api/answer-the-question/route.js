@@ -9,7 +9,8 @@ const genAI = new GoogleGenerativeAI(process.env.GENERATIVE_AI_API_KEY);
 export async function POST(request) {
   try {
     const data = await request.json();
-    const prompt = data.question
+    let  prompt = data.question
+    prompt = '***Act like a bot from INSPIZY and answer this question: ' + prompt
     const file = data.image
     const mimeType = data.image_type
     let MODEL_NAME = 'gemini-pro-vision';

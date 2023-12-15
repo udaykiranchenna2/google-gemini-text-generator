@@ -5,7 +5,7 @@ import { useState } from "react";
 import { Icon } from "@iconify/react";
 export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
-  const [question, setQuestion] = useState(null);
+  const [question, setQuestion] = useState("who are you?");
   const [finalResponse, setFinalResponse] = useState(null);
   const [file, setFile] = useState(null);
   const [imageType, setImageType] = useState(null);
@@ -106,6 +106,7 @@ export default function Home() {
                 onInput={(e) => {
                   getTextOnInput(e.target.value);
                 }}
+                value="who are you?"
                 type="text"
                 id="prompt-input"
                 className="w-[75%] block p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
