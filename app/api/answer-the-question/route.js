@@ -10,7 +10,7 @@ export async function POST(request) {
   try {
     const data = await request.json();
     let  prompt = data.question
-    prompt = '***Act like a bot from INSPIZY and answer this question: ' + prompt
+    prompt = '***Act like a bot from INSPIZY(A multi tech company working with developement and so many startups) and answer this question: ' + prompt
     const file = data.image
     const mimeType = data.image_type
     let MODEL_NAME = 'gemini-pro-vision';
